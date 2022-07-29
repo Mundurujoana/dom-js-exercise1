@@ -15,16 +15,12 @@ header.style.color="#008000";
 const elem = document.getElementsByTagName("h3")[0].innerHTML = "fruits".toLocaleUpperCase();
 const elem2  = document.getElementsByTagName("h3")[1].innerHTML = "vegetables".toLocaleUpperCase();
 
-
-
 // Add one more fruit to the fruits list
-// Add on
-// let fruits = document.createElement("fruList")
-// let list = ["kiwi","mango",];
-// list.push(fruits);
-// console.log(list);
+var fruits = document.createElement("li");
+fruits.textContent = "Strawberrys";
+document.getElementById("fruList").appendChild(fruits);
 
-const fruit = document.createElement('li');
-fruit.textContent="berry"
-fruit.innerHTML = "strawberry";
-fruits.appendChild(fruit);
+// Add one more vegetable to the vegetables list
+var vegetables = document.createElement("li");
+vegetables.textContent = "Cabbages";
+document.getElementById("vegList").appendChild(vegetables);
